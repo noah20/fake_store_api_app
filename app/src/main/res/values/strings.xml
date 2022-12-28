@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Fake Store Api App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_amount">%1$s EGP</string>
+    <string name="str_product_details">product details</string>
+    <string name="str_products_list">products list</string>
+    <string name="str_category">category : </string>
+    <string name="str_rate_count">( %1$s )</string>
+    <string name="str_error">Something Went Wrong</string>
 </resources>

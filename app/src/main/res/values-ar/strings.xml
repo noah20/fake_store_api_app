@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fake Store Api App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_amount">%1$s ج.م</string>
+    <string name="str_product_details">تفاصيل المنتج</string>
+    <string name="str_products_list">قائمة المنتجات</string>
+    <string name="str_category">التصنيف : </string>
+    <string name="str_rate_count">( %1$s )</string>
+    <string name="str_error">Something Went Wrong</string>
+</resources>
