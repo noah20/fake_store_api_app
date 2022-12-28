@@ -3,10 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#F7FAF7"
+    android:background="@color/home_background_colo"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.ProductsFragment">
+    tools:context=".ui.products.ProductsFragment">
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -19,11 +19,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:spanCount="2"
-        tools:itemCount="20"
         tools:listitem="@layout/product_item_layout" />
 
 
     <include
+        tools:visibility="gone"
         android:id="@+id/cl_empty"
         layout="@layout/empty_state_layout"/>
 

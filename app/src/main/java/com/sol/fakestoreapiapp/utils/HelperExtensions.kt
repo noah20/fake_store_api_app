@@ -7,12 +7,15 @@ import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
+import com.sol.fakestoreapiapp.R
 import com.sol.fakestoreapiapp.databinding.EmptyStateLayoutBinding
 
 
 fun RequestBuilder<Drawable>.doAfterImageLoaded(handleResponse:Boolean = false , afterImageLoaded:(isSuccess:Boolean)->Unit): RequestBuilder<Drawable> {
 
-    return this.addListener(object : RequestListener<Drawable?> {
+
+    return this.error(R.drawable.ic_broken_image)
+        .addListener(object : RequestListener<Drawable?> {
         override fun onLoadFailed(
             e: GlideException?,
             model: Any?,

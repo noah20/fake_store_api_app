@@ -1,12 +1,10 @@
-package com.sol.fakestoreapiapp.ui.main
+package com.sol.fakestoreapiapp.ui.products
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.sol.fakestoreapiapp.databinding.FragmentProductsBinding

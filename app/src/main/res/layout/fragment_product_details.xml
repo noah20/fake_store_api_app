@@ -18,10 +18,10 @@
             android:id="@+id/tv_category_lbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/str_category"
-            android:textColor="#56AFF8"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_24"
+            tools:text="category : "
+            android:textColor="@color/tv_category_color"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="nokia"
-            android:textColor="#56AFF8"
+            android:textColor="@color/tv_category_color"
             app:layout_constraintBaseline_toBaselineOf="@+id/tv_category_lbl"
             app:layout_constraintStart_toEndOf="@id/tv_category_lbl" />
 
@@ -40,9 +40,8 @@
             style="@style/TextAppearance.MaterialComponents.Headline5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginHorizontal="@dimen/margin_16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_category_lbl"
@@ -52,8 +51,8 @@
             android:id="@+id/rate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
             android:paddingHorizontal="0dp"
             android:clickable="false"
             app:layout_constraintStart_toStartOf="parent"
@@ -76,10 +75,12 @@
             android:layout_width="0dp"
             android:layout_height="300dp"
             tools:src="@drawable/image"
+            android:layout_marginTop="@dimen/margin_16"
             android:background="@color/white"
             app:layout_constraintTop_toBottomOf="@+id/rate"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@null" />
 
 
         <ProgressBar
@@ -96,10 +97,9 @@
             android:id="@+id/tv_description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_32"
             android:gravity="start"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -116,10 +116,10 @@
             android:layout_marginEnd="@dimen/dim_16dp"
             android:background="@drawable/round_corner_4dp"
             android:gravity="start"
-            android:padding="5dp"
+            android:padding="@dimen/dim_8dp"
             tools:text="200 EGP"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_16sp"
             app:layout_constraintBottom_toBottomOf="@id/imageView"
             app:layout_constraintEnd_toEndOf="@id/imageView" />
 

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/productsFragment"
-        android:name="com.sol.fakestoreapiapp.ui.main.ProductsFragment"
+        android:name="com.sol.fakestoreapiapp.ui.products.ProductsFragment"
         android:label="@string/str_products_list"
         tools:layout="@layout/fragment_products" >
         <action

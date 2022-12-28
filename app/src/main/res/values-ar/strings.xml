@@ -5,7 +5,7 @@
     <string name="str_amount">%1$s ج.م</string>
     <string name="str_product_details">تفاصيل المنتج</string>
     <string name="str_products_list">قائمة المنتجات</string>
-    <string name="str_category">التصنيف : </string>
+    <string name="str_category">التصنيف :  %1$s </string>
     <string name="str_rate_count">( %1$s )</string>
     <string name="str_error">Something Went Wrong</string>
 </resources>

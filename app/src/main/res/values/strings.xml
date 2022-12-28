@@ -4,7 +4,7 @@
     <string name="str_amount">%1$s EGP</string>
     <string name="str_product_details">product details</string>
     <string name="str_products_list">products list</string>
-    <string name="str_category">category : </string>
+    <string name="str_category">category : %1$s </string>
     <string name="str_rate_count">( %1$s )</string>
     <string name="str_error">Something Went Wrong</string>
 </resources>

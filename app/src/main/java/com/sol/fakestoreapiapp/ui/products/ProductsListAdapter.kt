@@ -1,4 +1,4 @@
-package com.sol.fakestoreapiapp.ui.main
+package com.sol.fakestoreapiapp.ui.products
 
 import android.content.res.Resources
 import android.view.LayoutInflater
