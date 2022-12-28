@@ -14,6 +14,7 @@ import com.sol.fakestoreapiapp.databinding.ActivityMainBinding
 import com.sol.fakestoreapiapp.databinding.FragmentProductDetailsBinding
 import com.sol.fakestoreapiapp.domain.viewmodel.HomeViewModel
 import com.sol.fakestoreapiapp.framework.model.getData
+import com.sol.fakestoreapiapp.framework.model.getThrowable
 import com.sol.fakestoreapiapp.ui.main.ProductsFragment
 import com.sol.fakestoreapiapp.ui.main.ProductsFragmentDirections
 import com.sol.fakestoreapiapp.utils.doAfterImageLoaded
@@ -83,7 +84,7 @@ class ProductDetailsFragment : Fragment() {
             }else if(it.isFailed()){
                 mainBinding.clEmpty.root.visibility = View.VISIBLE
                 mainBinding.clEmpty.showLoading(true)
-                showMessage("error occur..!")
+                showMessage(mViewModel.getErrorMessage(it.getThrowable()))
             }
 
 

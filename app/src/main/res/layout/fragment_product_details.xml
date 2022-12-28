@@ -37,15 +37,16 @@
 
         <TextView
             android:id="@+id/tv_title"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            tools:text="DANVOUY Womens T Shirt Casual Cotton Short"
-            style="@style/TextAppearance.MaterialComponents.Headline5"
+            android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_category_lbl" />
+            app:layout_constraintTop_toBottomOf="@id/tv_category_lbl"
+            tools:text="DANVOUY Womens T Shirt Casual Cotton Short" />
 
         <RatingBar
             android:id="@+id/rate"
@@ -97,14 +98,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="32dp"
             android:gravity="start"
-            tools:text="(50)"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imageView"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="(50)" />
 
         <TextView
             android:id="@+id/tv_price"
@@ -123,6 +125,7 @@
 
 
         <include
+            tools:visibility="gone"
             android:id="@+id/cl_empty"
             layout="@layout/empty_state_layout"/>
 

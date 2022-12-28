@@ -38,3 +38,10 @@ fun <T> ResultWrapper<T>.getData(): T?{
 
     return null
 }
+
+fun <T> ResultWrapper<T>.getThrowable(): Throwable?{
+    if (this is ResultWrapper.Error)
+        return this.exception
+
+    return null
+}

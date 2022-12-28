@@ -2,6 +2,7 @@ package com.sol.fakestoreapiapp.domain.viewmodel
 
 import androidx.lifecycle.*
 import com.sol.fakestoreapiapp.framework.model.ResultWrapper
+import com.sol.fakestoreapiapp.framework.model.getThrowable
 import com.sol.fakestoreapiapp.framework.remote.data.ProductDataResponse
 import com.sol.fakestoreapiapp.framework.remote.interfaces.FakeStoreRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -56,6 +57,12 @@ class HomeViewModel @Inject constructor(private val repo:FakeStoreRepository):Vi
             }
         }
 
+
+    }
+
+    fun getErrorMessage(throwable: Throwable?): String {
+
+        return "SomeThing Went Wrong..! ${throwable?.message}"
 
     }
 

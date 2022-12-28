@@ -12,6 +12,7 @@ import androidx.navigation.fragment.findNavController
 import com.sol.fakestoreapiapp.databinding.FragmentProductsBinding
 import com.sol.fakestoreapiapp.domain.viewmodel.HomeViewModel
 import com.sol.fakestoreapiapp.framework.model.getData
+import com.sol.fakestoreapiapp.framework.model.getThrowable
 import com.sol.fakestoreapiapp.framework.remote.data.ProductDataResponse
 import com.sol.fakestoreapiapp.utils.showLoading
 import com.sol.fakestoreapiapp.utils.showMessage
@@ -67,7 +68,7 @@ class ProductsFragment : Fragment(), ProductsListAdapter.OnItemClick {
             }else if(it.isFailed()){
                 mBinding.clEmpty.root.visibility = View.VISIBLE
                 mBinding.clEmpty.showLoading(true)
-                showMessage("SomeThing Went Wrong..!")
+                showMessage(mViewModel.getErrorMessage(it.getThrowable()))
             }
 
 
